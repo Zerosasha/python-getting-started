@@ -24,6 +24,5 @@ def send_text(message):
     print(message.text)
 
     bot.forward_message(TO_CHAT_ID, message.chat.id, message.message_id)
+bot.polling(none_stop=True)
 
-if __name__ == "__main__":
-    bot.polling(none_stop=True)
